@@ -8,7 +8,7 @@ from typing import Generator
 import os
 
 # Database URL from environment variable
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password@localhost:5432/buddy_ai")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/buddy_ai")
 
 # Create SQLAlchemy engine
 engine = create_engine(
